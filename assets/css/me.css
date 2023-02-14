@@ -1,0 +1,66 @@
+.appHeader {
+  background-color: #34d399 !important;
+}
+
+.wallet-card-section:before {
+  background-color: #34d399 !important;
+}
+
+#loader {
+  background-color: #34d399 !important;
+}
+.appHeader .left .headerButton {
+  color: black !important;
+}
+.listed-detail .iconbox {
+  background-color: white !important;
+}
+h1.total {
+  font-size: 26px !important;
+}
+
+#text-bacaan {
+  font-size: 25px !important;
+  line-height: 50px !important;
+  direction: rtl !important;
+}
+
+..nav-tabs.lined .nav-item .nav-link {
+  color: #34d399 !important;
+}
+.nav-tabs.lined .nav-item .nav-link.active {
+  color: #34d399 !important;
+  border-bottom-color: #34d399 !important;
+}
+
+.number-ayat {
+  font-family: "Noto Naskh Arabic", serif !important;
+}
+.appBottomMenu .item .action-button {
+  background: #34d399 !important;
+}
+
+.appBottomMenu .item.active:before {
+  background: #34d399 !important;
+}
+
+.appBottomMenu .item.active .icon,
+.appBottomMenu .item.active ion-icon,
+.appBottomMenu .item.active strong {
+  color: #34d399 !important;
+  font-weight: 500;
+}
+
+.doa ion-icon {
+  font-size: 40px !important;
+}
+#ayat-doa{
+  font-size:20px !important;
+  line-height: 40px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #surah-pertama {
+    font-size: 20px !important;
+  }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Al - Qur'an</title>
+    <meta name="description" content="Finapp HTML Mobile Template" />
+    <meta
+      name="keywords"
+      content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive"
+    />
+    <link
+    rel="icon"
+    type="image/png"
+    href="../assets/icon/quran.png"
+    sizes="32x32"
+  />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/img/icon/192x192.png"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/me.css" />
+    <link rel="manifest" href="__manifest.json" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- loader -->
+    <div id="loader">
+      <img
+        src="../assets/img/loading-icon.png"
+        alt="icon"
+        class="loading-icon"
+      />
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader">
+      <div class="left">
+        <a href="#" class="headerButton goBack">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </a>
+      </div>
+      <div class="pageTitle">Detail Surah</div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule" class="full-height">
+      <div class="section mt-2 mb-2">
+        <div class="listed-detail mt-3">
+          <div class="icon-wrapper">
+            <div class="iconbox">
+              <img src="../assets/icon/surah.png" width="50" alt="" />
+            </div>
+          </div>
+          <h3 class="text-center mt-2" id="judul-surah"></h3>
+        </div>
+        <div class="card">
+          <div class="card-body pt-0">
+            <ul class="nav nav-tabs lined" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  data-bs-toggle="tab"
+                  href="#desk"
+                  role="tab"
+                >
+                  Deskripsi
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  href="#bacaan"
+                  role="tab"
+                >
+                  Bacaan
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  href="#audio"
+                  role="tab"
+                >
+                  Audio
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content mt-2">
+              <div
+                class="tab-pane fade show active"
+                id="desk"
+                role="tabpanel"
+              >
+              <ul class="listview flush transparent simple-listview no-space mt-3">
+                <li>
+                  <strong id="makna">Status</strong>
+                </li>
+                <li>
+                  <strong>Surah Ke</strong>
+                  <span id="surah-ke"></span>
+                </li>
+                <li>
+                  <strong>Jumlah Ayat</strong>
+                  <span id="ayat"></span>
+                </li>
+                <li>
+                  <strong>Turun</strong>
+                  <span id="turun"></span>
+                </li>
+              </ul>
+              </div>
+              <div class="tab-pane fade" id="bacaan" role="tabpanel">
+              </div>
+              <div class="tab-pane fade" id="audio" role="tabpanel">
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        </ul>
+      </div>
+    </div>
+    <!-- * App Capsule -->
+
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+      <a href="../index.html" class="item ">
+        <div class="col">
+          <ion-icon name="pie-chart-outline"></ion-icon>
+          <strong>Dasboard</strong>
+        </div>
+      </a>
+      <a href="semua-surah.html" class="item active">
+        <div class="col">
+          <img src="../assets/icon/book-bottom.png" width="20" alt="" />
+          <strong>Al-Qur'an</strong>
+        </div>
+      </a>
+      <a href="doa.html" class="item">
+        <div class="col">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <strong>Doa</strong>
+        </div>
+      </a>
+      <a href="pengaturan.html" class="item">
+        <div class="col">
+          <ion-icon name="settings-outline"></ion-icon>
+          <strong>Pengaturan</strong>
+        </div>
+      </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- ========= JS Files =========  -->
+    <!-- Bootstrap -->
+    <script src="../assets/js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Splide -->
+    <script src="../assets/js/plugins/splide/splide.min.js"></script>
+    <!-- Base Js File -->
+    <script src="../assets/js/base.js"></script>
+    <!-- api -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/api.js"></script>
+  </body>
+</html>

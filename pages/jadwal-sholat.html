@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Al - Qur'an</title>
+    <meta name="description" content="Finapp HTML Mobile Template" />
+    <meta
+      name="keywords"
+      content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive"
+    />
+    <link
+    rel="icon"
+    type="image/png"
+    href="../assets/icon/quran.png"
+    sizes="32x32"
+  />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/img/icon/192x192.png"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/me.css" />
+    <link rel="manifest" href="__manifest.json" />
+  </head>
+
+  <body>
+    <!-- loader -->
+    <div id="loader">
+      <img
+        src="../assets/img/loading-icon.png"
+        alt="icon"
+        class="loading-icon"
+      />
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader">
+      <div class="left">
+        <a href="#" class="headerButton goBack">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </a>
+      </div>
+      <div class="pageTitle">Jadwal Sholat</div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule" class="full-height">
+      <div class="section mt-2 mb-2">
+        <div class="listed-detail mt-3">
+          <div class="icon-wrapper">
+            <div class="iconbox">
+              <img
+                src="../assets/icon/material-symbols_location-on.png"
+                width="30"
+                alt=""
+              />
+            </div>
+          </div>
+          <h3 class="text-center mt-2" id="lokasi-jadwal"></h3>
+          <form class="search-form">
+            <div class="d-flex">
+              <div class="form-group searchbox mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="input-cari-jadwal"
+                  placeholder="Negara/Kota"
+                />
+                <i class="input-icon">
+                  <ion-icon name="search-outline"></ion-icon>
+                </i>
+              </div>
+              <button
+                type="button"
+                class="btn btn-success shadowed ms-1 me-1 mb-1"
+                id="tombol-cari-jadwal"
+              >
+                Cari
+              </button>
+            </div>
+          </form>
+        </div>
+        <ul
+          class="listview flush transparent simple-listview no-space mt-3"
+          id="jadwal-sholat"
+        >
+          <li>
+            <strong>Tanggal </strong>
+            <span id="tanggal-jadwal"></span>
+          </li>
+          <li>
+            <strong>Subuh</strong>
+            <span id="subuh"></span>
+          </li>
+          <li>
+            <strong>Terbit</strong>
+            <span id="terbit"></span>
+          </li>
+          <li>
+            <strong>Dzuhur</strong>
+            <span id="zuhur"></span>
+          </li>
+          <li>
+            <strong>Ashar</strong>
+            <span id="asar"></span>
+          </li>
+          <li>
+            <strong>Magrib</strong>
+            <span id="magrib"></span>
+          </li>
+          <li>
+            <strong>Isya</strong>
+            <span id="isya"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+      <a href="../index.html" class="item">
+        <div class="col">
+          <ion-icon name="pie-chart-outline"></ion-icon>
+          <strong>Dasboard</strong>
+        </div>
+      </a>
+      <a href="semua-surah.html" class="item">
+        <div class="col">
+          <img src="../assets/icon/book-bottom.png" width="20" alt="" />
+          <strong>Al-Qur'an</strong>
+        </div>
+      </a>
+      <a href="doa.html" class="item">
+        <div class="col">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <strong>Doa</strong>
+        </div>
+      </a>
+      <a href="pengaturan.html" class="item">
+        <div class="col">
+          <ion-icon name="settings-outline"></ion-icon>
+          <strong>Pengaturan</strong>
+        </div>
+      </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- ========= JS Files =========  -->
+    <!-- Bootstrap -->
+    <script src="../assets/js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Splide -->
+    <script src="../assets/js/plugins/splide/splide.min.js"></script>
+    <!-- Base Js File -->
+    <script src="../assets/js/base.js"></script>
+    <!-- api -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/api.js"></script>
+  </body>
+</html>

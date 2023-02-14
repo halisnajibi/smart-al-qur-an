@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>Al-Qur'an</title>
+    <meta name="description" content="Finapp HTML Mobile Template" />
+    <meta
+      name="keywords"
+      content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/icon/quran.png"
+      sizes="32x32"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/icon/192x192.png"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/me.css" />
+    <link rel="manifest" href="__manifest.json" />
+  </head>
+
+  <body>
+    <!-- loader -->
+    <div id="loader">
+      <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon" />
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+      <div class="pageTitle">
+        <img src="assets/img/logo.png" alt="logo" class="logo" />
+      </div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+      <!-- Wallet Card -->
+      <div class="section wallet-card-section pt-1">
+        <div class="wallet-card">
+          <!-- Balance -->
+          <div class="balance">
+            <div class="left">
+              <span class="title" id="waktu-dasboard"></span>
+              <h1 class="total" id="ucapan"></h1>
+            </div>
+            <div class="right">
+              <img src="assets/icon/quran.png" width="80" alt="" />
+            </div>
+          </div>
+          <!-- * Balance -->
+          <!-- Wallet Footer -->
+          <div class="wallet-footer">
+            <div class="item">
+              <a href="pages/semua-surah.html">
+                <div class="icon-wrapper bg-success">
+                  <img src="assets/icon/book.png" width="20" alt="" />
+                </div>
+                <strong>Al-Qur'an</strong>
+              </a>
+            </div>
+            <div class="item">
+              <a href="pages/jadwal-sholat.html">
+                <div class="icon-wrapper bg-success">
+                  <img src="assets/icon/clock.png" width="20" alt="" />
+                </div>
+                <strong>Jadwal Sholat</strong>
+              </a>
+            </div>
+            <div class="item">
+              <a href="pages/doa.html">
+                <div class="icon-wrapper bg-success">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                </div>
+                <strong>Doa</strong>
+              </a>
+            </div>
+          </div>
+          <!-- * Wallet Footer -->
+        </div>
+      </div>
+      <!-- Wallet Card -->
+      <!-- Stats -->
+      <div class="section">
+        <div class="row mt-2">
+          <div class="col-6">
+            <div class="stat-box">
+              <div class="title">Surah</div>
+              <div class="value text-success">114</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-box">
+              <div class="title">Juz</div>
+              <div class="value text-success">30</div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-6">
+            <div class="stat-box">
+              <div class="title">Ayat</div>
+              <div class="value text-success">6236</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="stat-box">
+              <div class="title">Surah Pertama</div>
+              <div class="value text-success" id="surah-pertama">
+                Al-Fatihah
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- * Stats -->
+
+      <!-- Transactions -->
+      <div class="section mt-4">
+        <div class="section-heading">
+          <h2 class="title">Surah</h2>
+          <a href="pages/semua-surah.html" class="link">Semua Surah</a>
+        </div>
+        <div class="transactions" id="surah"></div>
+      </div>
+      <!-- * Transactions -->
+      <!-- app footer -->
+      <div class="appFooter mt-2">
+        <div class="footer-title">
+          Copyright ©
+          <a
+            href="https://halisnajibi.my.id/"
+            target="_blank"
+            class="text-success"
+            >halisnajibi</a
+          >
+          2023
+        </div>
+      </div>
+      <!-- * app footer -->
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+      <a href="index.html" class="item active">
+        <div class="col">
+          <ion-icon name="pie-chart-outline"></ion-icon>
+          <strong>Dasboard</strong>
+        </div>
+      </a>
+      <a href="pages/semua-surah.html" class="item">
+        <div class="col">
+          <img src="assets/icon/book-bottom.png" width="20" alt="" />
+          <strong>Al-Qur'an</strong>
+        </div>
+      </a>
+      <a href="pages/doa.html" class="item">
+        <div class="col">
+          <ion-icon name="document-text-outline"></ion-icon>
+          <strong>Doa</strong>
+        </div>
+      </a>
+      <a href="pages/pengaturan.html" class="item">
+        <div class="col">
+          <ion-icon name="settings-outline"></ion-icon>
+          <strong>Pengaturan</strong>
+        </div>
+      </a>
+    </div>
+    <!-- * App Bottom Menu -->
+    <!-- ========= JS Files =========  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+    <!-- api -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/api.js"></script>
+    <script>
+      // Add to Home with 2 seconds delay.
+      AddtoHome("2000", "once");
+    </script>
+  </body>
+</html>
